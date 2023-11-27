@@ -2,7 +2,7 @@ import fileinput
 
 length = 0
 
-for line in fileinput.input():    
+for line in fileinput.input():
     sizes = line.strip().split("x")
     sizes = [int(i) for i in sizes]
     sizes.sort()
