@@ -1,4 +1,11 @@
 import fileinput
+from enum import Enum
+
+class Direction(str, Enum):
+    UP = '^'
+    DOWN = 'v'
+    LEFT = '<'
+    RIGHT = '>'
 
 line = fileinput.input().readline()
 
@@ -8,13 +15,13 @@ y = 0
 grid[x][y] = 1
 
 for char in line:
-    if char == '^':
+    if char == Direction.UP:
         x += 1
-    elif char == 'v':
+    elif char == Direction.DOWN:
         x -= 1
-    elif char == '<':
+    elif char == Direction.LEFT:
         y -= 1
-    elif char == '>':
+    elif char == Direction.RIGHT:
         y += 1
 
     grid[x][y] += 1
