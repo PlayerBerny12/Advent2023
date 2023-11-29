@@ -4,7 +4,7 @@ nice_count = 0
 
 for line in fileinput.input():    
     double_letter = False    
-    previous_chars = ['', '']
+    previous_chars = ["", ""]
     
     for char in line:
         if previous_chars[1] == char:

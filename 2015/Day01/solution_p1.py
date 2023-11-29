@@ -4,7 +4,7 @@ line = fileinput.input().readline()
 
 floor = 0
 for char in line:
-    if char == '(':
+    if char == "(":
         floor += 1
     else:
         floor -= 1

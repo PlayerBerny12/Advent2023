@@ -3,9 +3,9 @@ import re
 from enum import Enum
 
 class Command(str, Enum):
-    TURNON = 'turn on'
-    TOGGLE = 'toggle'
-    TURNOFF = 'turn off'
+    TURNON = "turn on"
+    TOGGLE = "toggle"
+    TURNOFF = "turn off"
 
 grid = [[0 for _ in range(1000)] for _ in range(1000)]
 instructions = re.findall(r"(turn on|toggle|turn off)\s(\d+),(\d+)\sthrough\s(\d+),(\d+)", sys.stdin.read())

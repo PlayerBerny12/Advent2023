@@ -2,10 +2,10 @@ import fileinput
 from enum import Enum
 
 class Direction(str, Enum):
-    UP = '^'
-    DOWN = 'v'
-    LEFT = '<'
-    RIGHT = '>'
+    UP = "^"
+    DOWN = "v"
+    LEFT = "<"
+    RIGHT = ">"
 
 line = fileinput.input().readline()
 
