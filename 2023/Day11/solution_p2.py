@@ -39,7 +39,6 @@ for y in range(len(grid)):
             galaxies.append((x, y))
 
 acc = 0
-
 for galaxy1, galaxy2 in itertools.combinations(galaxies, 2):
     acc += distanec(galaxy1, galaxy2, empty_rows, empty_cols)
 
