@@ -28,7 +28,6 @@ def distanec(galaxy1, galaxy2, empty_rows, empty_cols):
       
     return (abs(galaxy1[0] - galaxy2[0]) + (cross_y * EXPANSION_SPEED)) + (abs(galaxy1[1] - galaxy2[1]) + (cross_x * EXPANSION_SPEED))
 
-
 grid = np.array([[char for char in line.strip()] for line in fileinput.input()])
 empty_rows, empty_cols = expand(grid)
 galaxies = []
