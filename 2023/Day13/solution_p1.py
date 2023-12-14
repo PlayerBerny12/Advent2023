@@ -25,7 +25,7 @@ for line in fileinput.input():
                 
         row_mirrors = find_mirrors(patterns)
         column_mirrors = find_mirrors(patterns.T)
-        
+
         acc += row_mirrors * 100
         acc += column_mirrors
 
